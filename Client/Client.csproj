@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED1AB65B-930A-4514-BBE1-9408A07BDD7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blaze</RootNamespace>
+    <AssemblyName>Blaze%27s Client</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>F:\Steam\steamapps\common\VRChat\Blaze\Resources\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>WTFBlaze%27s Official Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DataModel">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\DataModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Il2CppSystem.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\MelonLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Photon-DotNet">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Photon-DotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transmtn">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Transmtn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnhollowerRuntimeLib">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\UnityEngine.XRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.Udon">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.Udon.Common">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.Udon.Wrapper">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.Udon.Wrapper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.UI.Core">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.UI.Elements">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Elements.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.UI.Shared">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.UI.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.Utility">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRC.Utility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRCCore-Editor">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRCCore-Standalone">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCCore-Standalone.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRCSDK2">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRCSDK3">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDK3.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRCSDKBase">
+      <HintPath>F:\Steam\steamapps\common\VRChat\MelonLoader\Managed\VRCSDKBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\APIStuff.cs" />
+    <Compile Include="API\AW\ActionWheelAPI.cs" />
+    <Compile Include="API\BlazesAPI.cs" />
+    <Compile Include="API\QM\QMButtonBase.cs" />
+    <Compile Include="API\QM\QMInfo.cs" />
+    <Compile Include="API\QM\QMLabel.cs" />
+    <Compile Include="API\QM\QMNestedButton.cs" />
+    <Compile Include="API\QM\QMScrollMenu.cs" />
+    <Compile Include="API\QM\QMSingleButton.cs" />
+    <Compile Include="API\QM\QMSlider.cs" />
+    <Compile Include="API\QM\QMTabButton.cs" />
+    <Compile Include="API\QM\QMToggleButton.cs" />
+    <Compile Include="API\SM\SMButton.cs" />
+    <Compile Include="API\SM\SMList.cs" />
+    <Compile Include="API\SM\SMMenu.cs" />
+    <Compile Include="API\SM\SMPopup.cs" />
+    <Compile Include="API\SM\SMText.cs" />
+    <Compile Include="API\Wings\BaseWing.cs" />
+    <Compile Include="API\Wings\WingButton.cs" />
+    <Compile Include="API\Wings\WingPage.cs" />
+    <Compile Include="API\Wings\WingToggle.cs" />
+    <Compile Include="BlazeInfo.cs" />
+    <Compile Include="Configs\AviFavConfig.cs" />
+    <Compile Include="Configs\BonesConfig.cs" />
+    <Compile Include="Configs\Config.cs" />
+    <Compile Include="Configs\MainConfig.cs" />
+    <Compile Include="Configs\CrashConfig.cs" />
+    <Compile Include="Configs\InstanceHistoryConfig.cs" />
+    <Compile Include="Configs\KeybindsConfig.cs" />
+    <Compile Include="Configs\KOSConfig.cs" />
+    <Compile Include="Configs\LocalBlockConfig.cs" />
+    <Compile Include="Configs\WaypointsConfig.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Modules\Avatars\AntiCrash.cs" />
+    <Compile Include="Modules\Avatars\AvatarFavorites.cs" />
+    <Compile Include="Modules\Avatars\AvatarIndexer.cs" />
+    <Compile Include="Modules\Avatars\AvatarScanner.cs" />
+    <Compile Include="Modules\Avatars\AvatarSearch.cs" />
+    <Compile Include="Modules\Avatars\EZRip.cs" />
+    <Compile Include="Modules\Avatars\IKManipulation.cs" />
+    <Compile Include="Modules\Blacklists\BlacklistedAvatars.cs" />
+    <Compile Include="Modules\Avatars\ExtraAviLists.cs" />
+    <Compile Include="Modules\Blacklists\BlacklistedShaders.cs" />
+    <Compile Include="Modules\BModule.cs" />
+    <Compile Include="Modules\Desktop\DesktopDebug.cs" />
+    <Compile Include="Modules\Desktop\DesktopLabel.cs" />
+    <Compile Include="Modules\Desktop\DesktopPlayerList.cs" />
+    <Compile Include="Modules\Exploits\AnnoyingCamera.cs" />
+    <Compile Include="Modules\Exploits\AvatarCrash.cs" />
+    <Compile Include="Modules\Exploits\BodyAttacher.cs" />
+    <Compile Include="Modules\Exploits\ColliderHider.cs" />
+    <Compile Include="Modules\Exploits\EmojiSpammer.cs" />
+    <Compile Include="Modules\Exploits\ItemOrbit.cs" />
+    <Compile Include="Modules\Exploits\ItemSteal.cs" />
+    <Compile Include="Modules\Exploits\PlayerOrbit.cs" />
+    <Compile Include="Modules\Exploits\UdonManipulator.cs" />
+    <Compile Include="Modules\Exploits\USpeakSpammer.cs" />
+    <Compile Include="Modules\Menus\BlazeActionWheel.cs" />
+    <Compile Include="Modules\Menus\BlazeHelpMenu.cs" />
+    <Compile Include="Modules\Menus\BlazeMenu.cs" />
+    <Compile Include="Modules\Menus\BlazeSocialMenu.cs" />
+    <Compile Include="Modules\Misc\BlazeNetwork.cs" />
+    <Compile Include="Modules\Misc\BlazePlayerInfo.cs" />
+    <Compile Include="Modules\Misc\DiscordRPC.cs" />
+    <Compile Include="Modules\Desktop\FOVChanger.cs" />
+    <Compile Include="Modules\Misc\MediaControls.cs" />
+    <Compile Include="Modules\Security\NetworkSanity.cs" />
+    <Compile Include="Modules\Exploits\PersonalKOS.cs" />
+    <Compile Include="Modules\Useful\AccountSaver.cs" />
+    <Compile Include="Modules\Useful\GameLogs.cs" />
+    <Compile Include="Modules\Useful\GlobalBones.cs" />
+    <Compile Include="Modules\Useful\PersonalMirror.cs" />
+    <Compile Include="Modules\Useful\PickupsList.cs" />
+    <Compile Include="Modules\Movements\Flight.cs" />
+    <Compile Include="Modules\Movements\SimpleMovement.cs" />
+    <Compile Include="Modules\Security\HWIDSpoofer.cs" />
+    <Compile Include="Modules\Useful\InstanceHistory.cs" />
+    <Compile Include="Modules\Useful\LocalBlock.cs" />
+    <Compile Include="Modules\Menus\QMAddons.cs" />
+    <Compile Include="Modules\Desktop\PCKeybinds.cs" />
+    <Compile Include="Modules\Useful\SilentFavoriting.cs" />
+    <Compile Include="Modules\Desktop\ThirdPerson.cs" />
+    <Compile Include="Modules\Misc\TrueRank.cs" />
+    <Compile Include="Modules\Useful\Waypoints.cs" />
+    <Compile Include="Modules\Useful\WorldOptimizations.cs" />
+    <Compile Include="Modules\Desktop\ImGUIESP.cs" />
+    <Compile Include="Modules\Visual\Nameplates.cs" />
+    <Compile Include="Modules\Visual\UIColoring.cs" />
+    <Compile Include="Modules\Visual\VRCESP.cs" />
+    <Compile Include="Modules\WorldSpecific\AmongUs.cs" />
+    <Compile Include="Modules\WorldSpecific\Ghost.cs" />
+    <Compile Include="Patching.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Attributes\EmbeddedAttribute.cs" />
+    <Compile Include="Utils\Attributes\EnableDisableListener.cs" />
+    <Compile Include="Utils\Attributes\NullableAttribute.cs" />
+    <Compile Include="Utils\Attributes\NullableContextAttribute.cs" />
+    <Compile Include="Utils\BlazesXRefs.cs" />
+    <Compile Include="Utils\Discord\DiscordRichPresence.cs" />
+    <Compile Include="Utils\Functions.cs" />
+    <Compile Include="Utils\Logs.cs" />
+    <Compile Include="Utils\Managers\AssetBundleManager.cs" />
+    <Compile Include="Utils\Managers\ColorManager.cs" />
+    <Compile Include="Utils\Managers\ConsoleManager.cs" />
+    <Compile Include="Utils\Managers\EnumManager.cs" />
+    <Compile Include="Utils\Managers\FileManager.cs" />
+    <Compile Include="Utils\Managers\GameObjectManager.cs" />
+    <Compile Include="Utils\Managers\ImageManager.cs" />
+    <Compile Include="Utils\Managers\JsonManager.cs" />
+    <Compile Include="Utils\Managers\ListManager.cs" />
+    <Compile Include="Utils\Managers\RegexManager.cs" />
+    <Compile Include="Utils\Managers\RenderManager.cs" />
+    <Compile Include="Utils\Managers\StringManager.cs" />
+    <Compile Include="Utils\Managers\XRefManager.cs" />
+    <Compile Include="Utils\ModFiles.cs" />
+    <Compile Include="Utils\Objects\MediaObjects.cs" />
+    <Compile Include="Utils\Objects\ModObjects.cs" />
+    <Compile Include="Utils\Objects\NetworkObjects.cs" />
+    <Compile Include="Utils\Objects\OtherObjects.cs" />
+    <Compile Include="Utils\Objects\VRChatObjects.cs" />
+    <Compile Include="Utils\VRChat\AvatarUtils.cs" />
+    <Compile Include="Utils\VRChat\CameraUtils.cs" />
+    <Compile Include="Utils\VRChat\CrashUtils.cs" />
+    <Compile Include="Utils\VRChat\DownloadManager.cs" />
+    <Compile Include="Utils\VRChat\HighlighterUtils.cs" />
+    <Compile Include="Utils\VRChat\InputUtils.cs" />
+    <Compile Include="Utils\VRChat\MiscUtils.cs" />
+    <Compile Include="Utils\VRChat\ModerationUtils.cs" />
+    <Compile Include="Utils\VRChat\NotificationUtils.cs" />
+    <Compile Include="Utils\VRChat\PhotonUtils.cs" />
+    <Compile Include="Utils\VRChat\PlayerUtils.cs" />
+    <Compile Include="Utils\VRChat\PopupUtils.cs" />
+    <Compile Include="Utils\VRChat\QuickMenuUtils.cs" />
+    <Compile Include="Utils\VRChat\SerializationUtils.cs" />
+    <Compile Include="Utils\VRChat\ShaderUtils.cs" />
+    <Compile Include="Utils\VRChat\SocialMenuUtils.cs" />
+    <Compile Include="Utils\VRChat\USpeakerUtils.cs" />
+    <Compile Include="Utils\VRChat\WorldUtils.cs" />
+    <Compile Include="Utils\WebSocketSharp\ByteOrder.cs" />
+    <Compile Include="Utils\WebSocketSharp\CloseEventArgs.cs" />
+    <Compile Include="Utils\WebSocketSharp\CloseStatusCode.cs" />
+    <Compile Include="Utils\WebSocketSharp\CompressionMethod.cs" />
+    <Compile Include="Utils\WebSocketSharp\ErrorEventArgs.cs" />
+    <Compile Include="Utils\WebSocketSharp\Ext.cs" />
+    <Compile Include="Utils\WebSocketSharp\Fin.cs" />
+    <Compile Include="Utils\WebSocketSharp\HttpBase.cs" />
+    <Compile Include="Utils\WebSocketSharp\HttpRequest.cs" />
+    <Compile Include="Utils\WebSocketSharp\HttpResponse.cs" />
+    <Compile Include="Utils\WebSocketSharp\LogData.cs" />
+    <Compile Include="Utils\WebSocketSharp\Logger.cs" />
+    <Compile Include="Utils\WebSocketSharp\LogLevel.cs" />
+    <Compile Include="Utils\WebSocketSharp\Mask.cs" />
+    <Compile Include="Utils\WebSocketSharp\MessageEventArgs.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\AuthenticationBase.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\AuthenticationChallenge.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\AuthenticationResponse.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\AuthenticationSchemes.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\Chunk.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\ChunkedRequestStream.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\ChunkStream.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\ClientSslConfiguration.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\Cookie.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\CookieCollection.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\CookieException.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\EndPointListener.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\EndPointManager.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpBasicIdentity.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpConnection.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpDigestIdentity.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpHeaderInfo.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpHeaderType.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListener.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListenerAsyncResult.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListenerContext.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListenerException.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListenerPrefix.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListenerPrefixCollection.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListenerRequest.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpListenerResponse.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpRequestHeader.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpResponseHeader.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpStatusCode.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpStreamAsyncResult.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpUtility.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\HttpVersion.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\InputChunkState.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\InputState.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\LineState.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\NetworkCredential.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\QueryStringCollection.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\ReadBufferState.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\RequestStream.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\ResponseStream.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\ServerSslConfiguration.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\WebHeaderCollection.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\WebSockets\HttpListenerWebSocketContext.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\WebSockets\TcpListenerWebSocketContext.cs" />
+    <Compile Include="Utils\WebSocketSharp\Net\WebSockets\WebSocketContext.cs" />
+    <Compile Include="Utils\WebSocketSharp\Opcode.cs" />
+    <Compile Include="Utils\WebSocketSharp\PayloadData.cs" />
+    <Compile Include="Utils\WebSocketSharp\Rsv.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\HttpRequestEventArgs.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\HttpServer.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\IWebSocketSession.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\ServerState.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\WebSocketBehavior.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\WebSocketServer.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\WebSocketServiceHost.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\WebSocketServiceHost`1.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\WebSocketServiceManager.cs" />
+    <Compile Include="Utils\WebSocketSharp\Server\WebSocketSessionManager.cs" />
+    <Compile Include="Utils\WebSocketSharp\WebSocket.cs" />
+    <Compile Include="Utils\WebSocketSharp\WebSocketException.cs" />
+    <Compile Include="Utils\WebSocketSharp\WebSocketFrame.cs" />
+    <Compile Include="Utils\WebSocketSharp\WebSocketState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\blaze" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="Utils\WebSocketSharp\doc\doc.sh" />
+    <None Include="WTFBlaze%27s Official Key.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Utils\WebSocketSharp\doc\.gitignore" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reactor_Enabled="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
