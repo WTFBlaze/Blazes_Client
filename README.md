@@ -11,26 +11,21 @@ I just want to say thanks again to the following people.
 - Love
 - DayOfThePlay
 - Killer_Bigpoint
-- xAstroBoy
 - Cheetos
-- Mr.Null
 - Requi
 - Ben
 - DubyaDude
-- VX
+- Vx
 - LargestBoi
 - KeafyIsHere
 - Unreal & Meap
-- Lime / Pyro
 - Top
 - Xavi
 - Crecross
 - Dutboot
-- Edward7.
+- Edward7
 - FruitsAreCool
-- czn / rsdnt
-- Topi & Sven
-- Nitro.
+- Nitro
 - ItzShy
 
 You guys are the ones who even when I was unmotivated and ready to quit out of either boredom or mental break downs from irl shit you helped me and pushed me to continue. So thank you.
